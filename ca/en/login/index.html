@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ikenna.U</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/login.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <script src="https://use.fontawesome.com/69aaece150.js"></script>
+    <script src="https://kit.fontawesome.com/b09faaa4de.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    textarea:hover,
+    input:hover,
+    textarea:active,
+    input:active,
+    textarea:focus,
+    input:focus,
+    button:focus,
+    button:active,
+    button:hover,
+    label:focus,
+    .btn:active,
+    .btn-block:active,
+    .btn.active {
+        outline: none !important;
+        -webkit-appearance: none;
+        box-shadow: none !important;
+    }
+
+    .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+        }
+    }
+</style>
+
+<body
+    style="background-image: url('../images/pickupdelivery.png');  background-repeat: no-repeat ; background-size: cover;  padding-top: 5%; padding-bottom: 60%;">
+    <div class="form-signin text-center shadow rounded" id="form"
+        style="background-color: white; padding-bottom: 4%; padding-top: 3%;">
+        <img class="mb-4" src="../images/drop.png" alt="" width="72" height="72">
+
+        <button class="btn btn-info btn-block" id="signUp" type="submit" onclick=""
+            style="width: 65%; margin-left: 17.5%; margin-bottom: 17px;">Sign
+            up</button>
+        <button class="btn btn-outline-info btn-block" type="submit" style="width: 65%; margin-left: 17.5%;"
+            id="login">Log
+            in</button>
+        <p class="mt-5 mb-3 text-muted">By signing up you agree to our <a href="#"
+                style="text-decoration: none; color:rgb(28, 107, 153) ;">Terms of Use </a>and <a href="#"
+                style="text-decoration: none; color:rgb(28, 107, 153) ;">
+                Privacy Policy.</a></a></p>
+    </div>
+    <form class="form-signin text-center shadow rounded" id="LogIn"
+        style="background-color: white; padding-bottom: 4%; padding-top: 3%; display: none;">
+        <img class="mb-4" src="../images/drop.png" alt="" width="72" height="72">
+        <input class="form-control" type="email" placeholder="Email Address"
+            style="width: 65%; margin-left: 17.5%; margin-bottom: 17px;" required>
+
+        <input class="form-control" type="password" placeholder="Password"
+            style="width: 65%; margin-left: 17.5%; margin-bottom: 17px;">
+        <button href="#" class="btn btn-info btn-block" id="signUp" type="submit" onclick=""
+            style="width: 65%; margin-left: 17.5%; margin-bottom: 17px;">Sign
+            up</button>
+
+
+        <p class="mt-5 mb-3 text-muted">Signed up with Facebook or Google? <a href="#"
+                style="text-decoration: none; color:rgb(28, 107, 153) ;"> Tap here to create a password </a></p>
+    </form>
+    <form class="form-signin text-center shadow rounded" id="SignUp"
+        style="background-color: white; padding-bottom: 4%; padding-top: 3%; display: none;">
+        <img class="mb-4" src="../images/drop.png" alt="" width="72" height="72">
+
+        <input class="form-control" type="text" placeholder="First Name"
+            style="width: 65%; margin-left: 17.5%; margin-bottom: 17px;" required>
+        <input class="form-control" type="text" placeholder="Last Name"
+            style="width: 65%; margin-left: 17.5%; margin-bottom: 17px;" required>
+
+        <input class="form-control" type="email" placeholder="Email Address"
+            style="width: 65%; margin-left: 17.5%; margin-bottom: 17px;" required>
+
+        <input class="form-control" type="password" placeholder="Password"
+            style="width: 65%; margin-left: 17.5%; margin-bottom: 17px;">
+        <input class="form-control" type="text" placeholder="Postal Code"
+            style="width: 65%; margin-left: 17.5%; margin-bottom: 17px;">
+        <div class="custom-control custom-checkbox" style="width: 65%; margin-left: 17.5%; margin-bottom: 17px;">
+            <input type="checkbox" class="custom-control-input" id="checkme">
+            <label class="custom-control-label text-muted" for="checkme" style="text-align: left; font-size: 13px;">By
+                checking this
+                box, I
+                acknowledge that I have
+                reviewed and agree to the Terms and Conditions and Privacy Policy.</label>
+        </div>
+        <div class="custom-control custom-checkbox" style="width: 65%; margin-left: 17.5%; margin-bottom: 17px;">
+            <input type="checkbox" class="custom-control-input" id="same-address">
+            <label class="custom-control-label text-muted" for="same-address"
+                style="text-align: left; font-size: 13px;">I do not want to receive promotional emails and
+                notifications
+                from TaskRabbit</label>
+        </div>
+
+        <button href="#" class="btn btn-lg btn-info btn-block" id="sendNewSms2" type="submit" onclick=""
+            style="width: 65%; margin-left: 17.5%; margin-bottom: 17px;" disabled>Create account</button>
+
+    </form>
+    <div id="mybutton2">
+        <a href="../index.html" class="back shadow" style="text-decoration: none;"><i class="fa fa fa-caret-left"
+                aria-hidden="true"></i>
+
+            Back</a>
+    </div>
+
+
+
+    <div id="mybutton">
+        <button class="help shadow"><i class="fa fa fa-comment-o" aria-hidden="true"></i>
+            Chat</button>
+    </div>
+    <script>
+        var checker = document.getElementById('checkme');
+        var sendbtn = document.getElementById('sendNewSms2');
+        // when unchecked or checked, run the function
+        checker.onchange = function () {
+            if (this.checked) {
+                sendbtn.disabled = false;
+            } else {
+                sendbtn.disabled = true;
+            }
+
+        }
+
+        $("#login").click(function () {
+            $("#LogIn").show();
+        });
+
+        $("#login").click(function () {
+            $("#SignUp").hide();
+            $("#form").hide();
+        }); 
+    </script>
+</body>
+
+</html>

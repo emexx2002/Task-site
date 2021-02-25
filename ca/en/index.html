@@ -1,0 +1,1848 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    input::-webkit-input-placeholder {
+        font-size: 12px;
+        line-height: 4;
+
+    }
+
+    .checked {
+        color: orange;
+    }
+
+    .fa-star {
+        font-size: 13px;
+    }
+
+    #border {
+        border-right: 1px solid rgb(196, 194, 194);
+    }
+
+
+
+    @media (max-width:766px) {
+        #border {
+            border-right: none;
+            margin-bottom: 70px;
+        }
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ikenna.U</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <script src="https://use.fontawesome.com/69aaece150.js"></script>
+    <script src="https://kit.fontawesome.com/b09faaa4de.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous">
+    </script>
+    <script src="./js/jquery.jold.paginator.min.js"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light  shadow-sm " style="padding-left: 16px;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fal fa-bars"
+                style="color: rgb(28, 107, 153); border: none; outline: none; margin-right: 20%;"></i>
+        </button>
+        <a class="navbar-brand" href="./index.html" style="margin-left: 12%; margin-right: 28%; font-weight: bold;"><img
+                src="../en/images/drop.png" alt="" width="32" height="32" class="d-inline-block align-top"></a>
+
+        <div class=" collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="./services/contactless/index.html"
+                        style="color: rgb(28, 107, 153);">Contactless Tasks & Delivery<a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#location" style="color: rgb(28, 107, 153);">Locations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./services/index.html" style="color: rgb(28, 107, 153);">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../en/login/index.html" style="color: rgb(28, 107, 153);">Log in</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./become-a-tasker/index.html" type="button" class="btn btn-outline-info"
+                        style="padding-left: 10px;">Become a
+                        Tasker</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--Navbar-->
+    <!--covid-->
+    <div class="container-fluid">
+        <div class="container" style="padding-top:30px; padding-bottom: 30px; padding-left: 14%;">
+            <h4 style=" font-weight: 600;">See the latest on our response to COVID-19</h4>
+            <button style="border: none; outline: none; color: rgb(28, 107, 153);  background-color:transparent;"
+                data-toggle="modal" data-target="#extraLargeModal">Learn
+                more..
+            </button>
+            <div id="extraLargeModal" class="modal fade  shadow rounded" tabindex="-1" role="dialog">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="" style="padding: 20px;">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i
+                                    class="fa fa fa-times" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <div class="container-fluid" style="padding: 40px;">
+                            <div class="row">
+                                <div class="col-lg-5 bg-light" style="padding: 3%; height: auto;">
+                                    <img src="./images/index.svg" alt="" class="img-fluid" style="max-width: 150px; width: 50%; align-self: center; display: block;
+                                        margin-left: auto;
+                                        margin-right: auto;">
+                                </div>
+                                <div class="col-lg-7">
+                                    <h2 style="font-weight: 600;">We’re committed to safely helping neighbours connect
+                                        for help with everyday
+                                        life.</h2>
+                                    <p>In order to protect the TaskRabbit community at this time, all tasks are
+                                        currently contactless. You and your Tasker must agree to:</p>
+                                    <ul style="list-style:none ;">
+                                        <li><img src="./images/check.png" style="width: 20px; height: 20px;" alt="">
+                                            Maintain a safe separation of six feet/two meters (social distancing)</li>
+                                        <li><img src="./images/check.png" style="width: 20px; height: 20px;"> Follow
+                                            all
+                                            applicable public health guidelines and regulations.</li>
+                                    </ul>
+                                    <p>Thanks for doing your part to ensure the health of your community!<a
+                                            href="./announcement/index.html"
+                                            style="color: rgb(28, 107, 153); text-decoration: none;"> See what else
+                                            we’re doing to protect the TaskRabbit community.</a></p>
+                                </div>
+                            </div>
+                            <hr style="width: 76px; height: 1px; background-color:  rgb(28, 107, 153);">
+                            <div class="container-fluid">
+                                <h3>How do contactless tasks work?</h3>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="./images/index.png" style="width: 60px; height: auto;" alt="">
+                                        <p><span style="font-weight: 600;">1. Add instructions</span> in task details at
+                                            booking, such as drop-off
+                                            location or
+                                            other logistics.</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="./images/chat.png" style="width: 60px; height: auto;" alt="">
+                                        <p> <span style="font-weight: 600;">2. Confirm details in chat.</span> Your
+                                            Tasker
+                                            will reach out with any question</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="./images/star2.png" style="width: 60px; height: auto;" alt="">
+                                        <p><span style="font-weight: 600;">3. Tasker gets the job done! </span> They’ll
+                                            let
+                                            you know when they’ve arrived and
+                                            completed the task.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!---/covid-->
+    </div>
+    <!---/covid-->
+    <div class="container-fluid"
+        style='background-image: url("images/home3.jpg"); padding-top: 45px; padding-bottom: 45px; background-repeat: no-repeat ; background-size: cover; '>
+        <div class="text-center container shadow"
+            style="background-color: white; border-radius: 6px; max-width: 700px; padding: 30px;">
+            <h3 style="font-weight: 700; ">Help when You need it</h3>
+            <h3 style="font-weight: 700; ">,at your fingertips</h3>
+            <p style="margin-top: 25px;">Get help from thousands of trusted Taskers for everything from errands to
+                contactless deliveries.
+            </p>
+            <div class="row">
+                <div class="col-md-9 col-sm-9">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend" style="background:transparent; border-left: none;">
+                            <span class="input-group-text " id="basic-addon1" style="background:transparent; "><i
+                                    class="fa fa fa-search" aria-hidden="true" style="color: rgb(28, 107, 153);"></i>
+                            </span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="I need help with ..." aria-label="Username"
+                            aria-describedby="basic-addon1" style="border-left: none; outline: none;">
+                    </div>
+
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <button type="button" class="btn btn-outline-info"
+                        style=" Max-width: 650px; padding-left: 10%; padding-right: 10%;">Get help
+                        today
+                    </button>
+                </div>
+                <div class="col-md-3 col-sm-3" style="margin-top: 12px;">
+                    <button type="button" class="btn btn-outline-info btn-sm"
+                        style=" Max-width: 650px; padding-left: 30%; padding-right: 30%;">delivery
+                    </button>
+                </div>
+                <div class="col-md-3 col-sm-3" style="margin-top: 12px;">
+                    <button type="button" class="btn btn-outline-info btn-sm"
+                        style=" Max-width: 650px; padding-left: 30%; padding-right: 30%;">delivery
+                    </button>
+                </div>
+                <div class="col-md-3 col-sm-3" style="margin-top: 12px;">
+                    <button type="button" class="btn btn-outline-info btn-sm"
+                        style=" Max-width: 650px; padding-left: 30%; padding-right: 30%;">delivery
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!---/help-->
+
+    <div class="jumbotron" style="padding-right: 80px; padding-left: 80px;">
+        <div class="row">
+            <div class="col-md-4 col-sm-6" style="font-size:x-large;">
+                <img src="./images/stars.png" alt="" style="height: 40px;">
+                1.1+ Million Reviews
+            </div>
+            <div class="col-md-4 col-sm-6" style="font-size:x-large;">
+                <img src="./images/ikea.png" alt="" style="height: 40px;"> Partnered with IKEA
+            </div>
+            <div class="col-md-4 ">
+                <div class="row">
+                    <div class="col-md-6">
+
+                    </div>
+                    <div class="col-md-6">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Jumbotron-->
+    <div class="container-fluid">
+        <div class="container">
+            <h3 style="font-weight: 700; margin-bottom: 20px;">Popular projects in your area</h3>
+            <div class="row">
+                <div class="col-lg-3 col-md-12" style="margin-bottom: 20px;">
+                    <a href="#" style="text-decoration: none;">
+                        <div class="shadow rounded">
+                            <div style="height: 150px; /* height of container */
+                            overflow: hidden;
+                            ">
+                                <img class="img-fluid" src="./images/wall-mount-tv.jpg" alt="Card image cap">
+                            </div>
+                            <div class="text-center"
+                                style="padding-top: 30px; padding-bottom: 30px; padding-right: 40px ; padding-left: 40px;">
+                                <h6 style="color: black; font-weight: 500;">Mount a Tv or mirror</h6>
+                                <h7 style="color: rgb(28, 107, 153); font-size: 13px;"><i class="fa fas fa-tags"></i>
+                                    Avg. Project: $53 -
+                                    $106</h7>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="col-lg-3 col-md-6" style="margin-bottom: 20px;">
+                    <a href="#" style="text-decoration: none;">
+                        <div class="shadow rounded">
+                            <div style="height: 150px; /* height of container */
+                            overflow: hidden;
+                            ">
+                                <img class="img-fluid" src="./images/moving-company-stories-feature.jpg"
+                                    alt="Card image cap">
+                            </div>
+                            <div class="text-center"
+                                style="padding-top: 30px; padding-bottom: 30px; padding-right: 40px ; padding-left: 40px;">
+                                <h6 style="color: black; font-weight: 500;">Move Boxes via truck</h6>
+                                <h7 style="color: rgb(28, 107, 153); font-size: 13px;"><i class="fa fas fa-tags"></i>
+                                    Avg. Project: $49 -
+                                    $124</h7>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="col-lg-3 col-md-12" style="margin-bottom: 20px;">
+                    <a href="#" style="text-decoration: none;">
+                        <div class="shadow rounded">
+                            <div style="height: 150px; /* height of container */
+                            overflow: hidden;
+                            ">
+                                <img class="img-fluid" src="./images/How-To-Clean-Bathroom-Floor.jpg"
+                                    alt="Card image cap">
+                            </div>
+                            <div class="text-center"
+                                style="padding-top: 30px; padding-bottom: 30px; padding-right: 40px ; padding-left: 40px;">
+                                <h6 style="color: black; font-weight: 500;">Clean Bathroom/kitchen</h6>
+                                <h7 style="color: rgb(28, 107, 153); font-size: 13px;"><i class="fa fas fa-tags"></i>
+                                    Avg. Project: $49 -
+                                    $124</h7>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6" style="margin-bottom: 20px;">
+                    <a href="#" style="text-decoration: none;">
+                        <div class="shadow rounded">
+                            <div style="height: 150px; /* height of container */
+                            overflow: hidden;
+                            ">
+                                <img class="img-fluid" src="./images/wall-mount-tv.jpg" alt="Card image cap">
+                            </div>
+                            <div class="text-center"
+                                style="padding-top: 30px; padding-bottom: 30px; padding-right: 40px ; padding-left: 40px;">
+                                <h6 style="color: black; font-weight: 500;">Mount a Tv or mirror</h6>
+                                <h7 style="color: rgb(28, 107, 153); font-size: 13px;"><i class="fa fas fa-tags"></i>
+                                    Avg. Project: $49 -
+                                    $124</h7>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="col-lg-3 col-md-6" style="margin-bottom: 20px;">
+                    <a href="#" style="text-decoration: none;">
+                        <div class="shadow rounded">
+                            <div style="height: 150px; /* height of container */
+                            overflow: hidden;
+                            ">
+                                <img class="img-fluid" src="./images/wall-mount-tv.jpg" alt="Card image cap">
+                            </div>
+                            <div class="text-center"
+                                style="padding-top: 30px; padding-bottom: 30px; padding-right: 40px ; padding-left: 40px;">
+                                <h6 style="color: black; font-weight: 500;">Mount a Tv or mirror</h6>
+                                <h7 style="color: rgb(28, 107, 153); font-size: 13px;"><i class="fa fas fa-tags"></i>
+                                    Avg. Project: $49 -
+                                    $124</h7>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="col-lg-3 col-md-6" style="margin-bottom: 20px;">
+                    <a href="#" style="text-decoration: none;">
+                        <div class="shadow rounded">
+                            <div style="height: 150px; /* height of container */
+                            overflow: hidden;
+                            ">
+                                <img class="img-fluid" src="./images/wall-mount-tv.jpg" alt="Card image cap">
+                            </div>
+                            <div class="text-center"
+                                style="padding-top: 30px; padding-bottom: 30px; padding-right: 40px ; padding-left: 40px;">
+                                <h6 style="color: black; font-weight: 500;">Mount a Tv or mirror</h6>
+                                <h7 style="color: rgb(28, 107, 153); font-size: 13px;"><i class="fa fas fa-tags"></i>
+                                    Avg. Project: $49 -
+                                    $124</h7>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="col-lg-3 col-md-6" style="margin-bottom: 20px;">
+                    <a href="#" style="text-decoration: none;">
+                        <div class="shadow rounded">
+                            <div style="height: 150px; /* height of container */
+                            overflow: hidden;
+                            ">
+                                <img class="img-fluid" src="./images/wall-mount-tv.jpg" alt="Card image cap">
+                            </div>
+                            <div class="text-center"
+                                style="padding-top: 30px; padding-bottom: 30px; padding-right: 40px ; padding-left: 40px;">
+                                <h6 style="color: black; font-weight: 500;">Mount a Tv or mirror</h6>
+                                <h7 style="color: rgb(28, 107, 153); font-size: 13px;"><i class="fa fas fa-tags"></i>
+                                    Avg. Project: $49 -
+                                    $124</h7>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="col-lg-3 col-md-6" style="margin-bottom: 20px;">
+                    <a href="#" style="text-decoration: none;">
+                        <div class="shadow rounded">
+                            <div style="height: 150px; /* height of container */
+                            overflow: hidden;
+                            ">
+                                <img class="img-fluid" src="./images/wall-mount-tv.jpg" alt="Card image cap">
+                            </div>
+                            <div class="text-center"
+                                style="padding-top: 30px; padding-bottom: 30px; padding-right: 40px ; padding-left: 40px;">
+                                <h6 style="color: black; font-weight: 500;">Mount a Tv or mirror</h6>
+                                <h7 style="color: rgb(28, 107, 153); font-size: 13px;"><i class="fa fas fa-tags"></i>
+                                    Avg. Project: $49 -
+                                    $124</h7>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-light" style="margin-top: 100px; margin-bottom: 100px;">
+        <div class="row">
+            <div class="col-lg-6 order-md-2 ">
+                <img class="img-fluid" src="./images/home.png" alt="Card image cap">
+            </div>
+            <div class="col-lg-6 order-md-1 ">
+                <div class="container" style="padding-top: 8%; padding-left: 10%;">
+                    <h2 style="font-weight: 700;">Everyday life made easier</h2>
+                    <p>When life gets busy, you don’t have to tackle it alone. Get time back for what you love without
+                        breaking the bank.
+                    </p>
+                    <ul style="list-style: none;" style="margin-left: -100px;">
+                        <li style="margin-left: -40px; margin-bottom: 24px; font-weight: 700;">
+                            <img src="./images/check.png" style="width: 20px; height: 20px;" alt="">
+                            Choose your Tasker by reviews, skills, and price
+                        </li>
+                        <li style="margin-left: -40px; margin-bottom: 24px; font-weight: 700;">
+                            <img src="./images/check.png" style="width: 20px; height: 20px;" alt="">
+                            Schedule when it works for you — as early as today
+                        </li>
+                        <li style="margin-left: -40px; font-weight: 700;">
+                            <img src="./images/check.png" style="width: 20px; height: 20px;" alt="">
+                            Chat, pay, tip, and review all through one platform
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="container" style="padding: 15px;">
+            <h3 style="font-weight: 700;">Featured Taskers</h3>
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel"
+                style="padding-top: 20px; padding-left: 10px; padding-right: 10px;">
+                <div class="carousel-inner" style="padding-top: 20px;  padding-left: 10px; padding-right: 10px;">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6" style="margin-bottom: 20px;">
+                                <div class="shadow rounded"
+                                    style="padding-left: 5px; padding-top: 14px; padding-bottom: 20px;">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <div style="height: 90px; width: 90px; /* height of container */
+                                                    overflow: hidden;
+                                                    ">
+                                                    <img class="img-fluid rounded" src="./images/person.png"
+                                                        alt="Card image cap">
+                                                </div>
+
+                                            </div>
+                                            <div class="col-sm-8" style="padding-top: 16px;">
+                                                <h5 style="font-weight: 600;">Keri E. <i class="fa fas fa-medal"
+                                                        style="color: rgb(255, 230, 0)"></i>
+                                                </h5>
+                                                <h6 style="margin-left: 9px;"><i class="fa fas fa-star"
+                                                        style="color: rgb(28, 107, 153);"></i>100% positive reviews
+                                                </h6>
+                                                <h6 style="margin-left: 9px;"><img src="../en/images/check2.png"
+                                                        style="width: 18px;" alt="">137 completed tasks
+                                                </h6>
+                                            </div>
+                                        </div>
+                                        <hr>
+
+                                    </div>
+                                    <div class="container">
+                                        <h5>Featured skills</h5>
+                                        <div class="container-fluid">
+                                            <div class="row" style="margin-top: 12px;">
+                                                <div class="col-6">
+                                                    <h6 style="font-weight: 400;">Shopping</h6>
+                                                </div>
+                                                <div class="col-6" style="font-weight: 400; color: rgb(28, 107, 153);">
+                                                    <h6>$29.41/hr</h6>
+                                                </div>
+                                            </div>
+                                            <div class="row" style="margin-top: 12px;">
+                                                <div class="col-6">
+                                                    <h6 style="font-weight: 400;">Moving</h6>
+                                                </div>
+                                                <div class="col-6" style="font-weight: 400; color: rgb(28, 107, 153);">
+                                                    <h6>$29.41/hr</h6>
+                                                </div>
+                                            </div>
+                                            <div class="row" style="margin-top: 12px;">
+                                                <div class="col-6">
+                                                    <h6 style="font-weight: 400;">DElivery</h6>
+                                                </div>
+                                                <div class="col-6" style="font-weight: 400; color: rgb(28, 107, 153);">
+                                                    <h6>$29.41/hr</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr>
+
+                                    </div>
+                                    <div class="container">
+                                        <h6 style="font-weight: 600;">I'm the right person for the job:</h6>
+                                        <p>Shopping is a necessity of life, whether online or running to the
+                                            store. Let me take care of the tas...</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-4 col-md-6" style="margin-bottom: 20px;">
+                                <div class="shadow rounded"
+                                    style="padding-left: 5px; padding-top: 14px; padding-bottom: 20px;">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <div style="height: 90px; width: 90px; /* height of container */
+                                                    overflow: hidden;
+                                                    ">
+                                                    <img class="img-fluid rounded" src="./images/person.png"
+                                                        alt="Card image cap">
+                                                </div>
+
+                                            </div>
+                                            <div class="col-sm-8" style="padding-top: 16px;">
+                                                <h5 style="font-weight: 600;">Keri E. <i class="fa fas fa-medal"
+                                                        style="color: rgb(255, 230, 0)"></i>
+                                                </h5>
+                                                <h6 style="margin-left: 9px;"><i class="fa fas fa-star"
+                                                        style="color: rgb(28, 107, 153);"></i>100% positive reviews
+                                                </h6>
+                                                <h6 style="margin-left: 9px;"><img src="../en/images/check2.png"
+                                                        style="width: 18px;" alt="">137 completed tasks
+                                                </h6>
+                                            </div>
+                                        </div>
+                                        <hr>
+
+                                    </div>
+                                    <div class="container">
+                                        <h5>Featured skills</h5>
+                                        <div class="container-fluid">
+                                            <div class="row" style="margin-top: 12px;">
+                                                <div class="col-6">
+                                                    <h6 style="font-weight: 400;">Shopping</h6>
+                                                </div>
+                                                <div class="col-6" style="font-weight: 400; color: rgb(28, 107, 153);">
+                                                    <h6>$29.41/hr</h6>
+                                                </div>
+                                            </div>
+                                            <div class="row" style="margin-top: 12px;">
+                                                <div class="col-6">
+                                                    <h6 style="font-weight: 400;">Moving</h6>
+                                                </div>
+                                                <div class="col-6" style="font-weight: 400; color: rgb(28, 107, 153);">
+                                                    <h6>$29.41/hr</h6>
+                                                </div>
+                                            </div>
+                                            <div class="row" style="margin-top: 12px;">
+                                                <div class="col-6">
+                                                    <h6 style="font-weight: 400;">DElivery</h6>
+                                                </div>
+                                                <div class="col-6" style="font-weight: 400; color: rgb(28, 107, 153);">
+                                                    <h6>$29.41/hr</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr>
+
+                                    </div>
+                                    <div class="container">
+                                        <h6 style="font-weight: 600;">I'm the right person for the job:</h6>
+                                        <p>Shopping is a necessity of life, whether online or running to the
+                                            store. Let me take care of the tas...</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-4 col-md-6" style="margin-bottom: 20px;">
+                                <div class="shadow rounded"
+                                    style="padding-left: 5px; padding-top: 14px; padding-bottom: 20px;">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <div style="height: 90px; width: 90px; /* height of container */
+                                                    overflow: hidden;
+                                                    ">
+                                                    <img class="img-fluid rounded" src="./images/person.png"
+                                                        alt="Card image cap">
+                                                </div>
+
+                                            </div>
+                                            <div class="col-sm-8" style="padding-top: 16px;">
+                                                <h5 style="font-weight: 600;">Keri E. <i class="fa fas fa-medal"
+                                                        style="color: rgb(255, 230, 0)"></i>
+                                                </h5>
+                                                <h6 style="margin-left: 9px;"><i class="fa fas fa-star"
+                                                        style="color: rgb(28, 107, 153);"></i>100% positive reviews
+                                                </h6>
+                                                <h6 style="margin-left: 9px;"><img src="../en/images/check2.png"
+                                                        style="width: 18px;" alt="">137 completed tasks
+                                                </h6>
+                                            </div>
+                                        </div>
+                                        <hr>
+
+                                    </div>
+                                    <div class="container">
+                                        <h5>Featured skills</h5>
+                                        <div class="container-fluid">
+                                            <div class="row" style="margin-top: 12px;">
+                                                <div class="col-6">
+                                                    <h6 style="font-weight: 400;">Shopping</h6>
+                                                </div>
+                                                <div class="col-6" style="font-weight: 400; color: rgb(28, 107, 153);">
+                                                    <h6>$29.41/hr</h6>
+                                                </div>
+                                            </div>
+                                            <div class="row" style="margin-top: 12px;">
+                                                <div class="col-6">
+                                                    <h6 style="font-weight: 400;">Moving</h6>
+                                                </div>
+                                                <div class="col-6" style="font-weight: 400; color: rgb(28, 107, 153);">
+                                                    <h6>$29.41/hr</h6>
+                                                </div>
+                                            </div>
+                                            <div class="row" style="margin-top: 12px;">
+                                                <div class="col-6">
+                                                    <h6 style="font-weight: 400;">Delivery</h6>
+                                                </div>
+                                                <div class="col-6" style="font-weight: 400; color: rgb(28, 107, 153);">
+                                                    <h6>$29.41/hr</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr>
+
+                                    </div>
+                                    <div class="container">
+                                        <h6 style="font-weight: 600;">I'm the right person for the job:</h6>
+                                        <p>Shopping is a necessity of life, whether online or running to the
+                                            store. Let me take care of the tas...</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6" style="margin-bottom: 20px;">
+                                <div class="shadow rounded"
+                                    style="padding-left: 5px; padding-top: 14px; padding-bottom: 20px;">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <div style="height: 90px; width: 90px; /* height of container */
+                                                    overflow: hidden;
+                                                    ">
+                                                    <img class="img-fluid rounded" src="./images/person.png"
+                                                        alt="Card image cap">
+                                                </div>
+
+                                            </div>
+                                            <div class="col-sm-8" style="padding-top: 16px;">
+                                                <h5 style="font-weight: 600;">Keri E. <i class="fa fas fa-medal"
+                                                        style="color: rgb(255, 230, 0)"></i>
+                                                </h5>
+                                                <h6 style="margin-left: 9px;"><i class="fa fas fa-star"
+                                                        style="color: rgb(28, 107, 153);"></i>100% positive reviews
+                                                </h6>
+                                                <h6 style="margin-left: 9px;"><img src="../en/images/check2.png"
+                                                        style="width: 18px;" alt="">137 completed tasks
+                                                </h6>
+                                            </div>
+                                        </div>
+                                        <hr>
+
+                                    </div>
+                                    <div class="container">
+                                        <h5>Featured skills</h5>
+                                        <div class="container-fluid">
+                                            <div class="row" style="margin-top: 12px;">
+                                                <div class="col-6">
+                                                    <h6 style="font-weight: 400;">Shopping</h6>
+                                                </div>
+                                                <div class="col-6" style="font-weight: 400; color: rgb(28, 107, 153);">
+                                                    <h6>$29.41/hr</h6>
+                                                </div>
+                                            </div>
+                                            <div class="row" style="margin-top: 12px;">
+                                                <div class="col-6">
+                                                    <h6 style="font-weight: 400;">Moving</h6>
+                                                </div>
+                                                <div class="col-6" style="font-weight: 400; color: rgb(28, 107, 153);">
+                                                    <h6>$29.41/hr</h6>
+                                                </div>
+                                            </div>
+                                            <div class="row" style="margin-top: 12px;">
+                                                <div class="col-6">
+                                                    <h6 style="font-weight: 400;">DElivery</h6>
+                                                </div>
+                                                <div class="col-6" style="font-weight: 400; color: rgb(28, 107, 153);">
+                                                    <h6>$29.41/hr</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr>
+
+                                    </div>
+                                    <div class="container">
+                                        <h6 style="font-weight: 600;">I'm the right person for the job:</h6>
+                                        <p>Shopping is a necessity of life, whether online or running to the
+                                            store. Let me take care of the tas...</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-4 col-md-6" style="margin-bottom: 20px;">
+                                <div class="shadow rounded"
+                                    style="padding-left: 5px; padding-top: 14px; padding-bottom: 20px;">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <div style="height: 90px; width: 90px; /* height of container */
+                                                    overflow: hidden;
+                                                    ">
+                                                    <img class="img-fluid rounded" src="./images/person.png"
+                                                        alt="Card image cap">
+                                                </div>
+
+                                            </div>
+                                            <div class="col-sm-8" style="padding-top: 16px;">
+                                                <h5 style="font-weight: 600;">Keri E. <i class="fa fas fa-medal"
+                                                        style="color: rgb(255, 230, 0)"></i>
+                                                </h5>
+                                                <h6 style="margin-left: 9px;"><i class="fa fas fa-star"
+                                                        style="color: rgb(28, 107, 153);"></i>100% positive reviews
+                                                </h6>
+                                                <h6 style="margin-left: 9px;"><img src="../en/images/check2.png"
+                                                        style="width: 18px;" alt="">137 completed tasks
+                                                </h6>
+                                            </div>
+                                        </div>
+                                        <hr>
+
+                                    </div>
+                                    <div class="container">
+                                        <h5>Featured skills</h5>
+                                        <div class="container-fluid">
+                                            <div class="row" style="margin-top: 12px;">
+                                                <div class="col-6">
+                                                    <h6 style="font-weight: 400;">Shopping</h6>
+                                                </div>
+                                                <div class="col-6" style="font-weight: 400; color: rgb(28, 107, 153);">
+                                                    <h6>$29.41/hr</h6>
+                                                </div>
+                                            </div>
+                                            <div class="row" style="margin-top: 12px;">
+                                                <div class="col-6">
+                                                    <h6 style="font-weight: 400;">Moving</h6>
+                                                </div>
+                                                <div class="col-6" style="font-weight: 400; color: rgb(28, 107, 153);">
+                                                    <h6>$29.41/hr</h6>
+                                                </div>
+                                            </div>
+                                            <div class="row" style="margin-top: 12px;">
+                                                <div class="col-6">
+                                                    <h6 style="font-weight: 400;">DElivery</h6>
+                                                </div>
+                                                <div class="col-6" style="font-weight: 400; color: rgb(28, 107, 153);">
+                                                    <h6>$29.41/hr</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr>
+
+                                    </div>
+                                    <div class="container">
+                                        <h6 style="font-weight: 600;">I'm the right person for the job:</h6>
+                                        <p>Shopping is a necessity of life, whether online or running to the
+                                            store. Let me take care of the tas...</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-4 col-md-6" style="margin-bottom: 20px;">
+                                <div class="shadow rounded"
+                                    style="padding-left: 5px; padding-top: 14px; padding-bottom: 20px;">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <div style="height: 90px; width: 90px; /* height of container */
+                                                    overflow: hidden;
+                                                    ">
+                                                    <img class="img-fluid rounded" src="./images/person.png"
+                                                        alt="Card image cap">
+                                                </div>
+
+                                            </div>
+                                            <div class="col-sm-8" style="padding-top: 16px;">
+                                                <h5 style="font-weight: 600;">Keri E. <i class="fa fas fa-medal"
+                                                        style="color: rgb(255, 230, 0)"></i>
+                                                </h5>
+                                                <h6 style="margin-left: 9px;"><i class="fa fas fa-star"
+                                                        style="color: rgb(28, 107, 153);"></i>100% positive reviews
+                                                </h6>
+                                                <h6 style="margin-left: 9px;"><img src="../en/images/check2.png"
+                                                        style="width: 18px;" alt="">137 completed tasks
+                                                </h6>
+                                            </div>
+                                        </div>
+                                        <hr>
+
+                                    </div>
+                                    <div class="container">
+                                        <h5>Featured skills</h5>
+                                        <div class="container-fluid">
+                                            <div class="row" style="margin-top: 12px;">
+                                                <div class="col-6">
+                                                    <h6 style="font-weight: 400;">Shopping</h6>
+                                                </div>
+                                                <div class="col-6" style="font-weight: 400; color: rgb(28, 107, 153);">
+                                                    <h6>$29.41/hr</h6>
+                                                </div>
+                                            </div>
+                                            <div class="row" style="margin-top: 12px;">
+                                                <div class="col-6">
+                                                    <h6 style="font-weight: 400;">Moving</h6>
+                                                </div>
+                                                <div class="col-6" style="font-weight: 400; color: rgb(28, 107, 153);">
+                                                    <h6>$29.41/hr</h6>
+                                                </div>
+                                            </div>
+                                            <div class="row" style="margin-top: 12px;">
+                                                <div class="col-6">
+                                                    <h6 style="font-weight: 400;">DElivery</h6>
+                                                </div>
+                                                <div class="col-6" style="font-weight: 400; color: rgb(28, 107, 153);">
+                                                    <h6>$29.41/hr</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr>
+
+                                    </div>
+                                    <div class="container">
+                                        <h6 style="font-weight: 600;">I'm the right person for the job:</h6>
+                                        <p>Shopping is a necessity of life, whether online or running to the
+                                            store. Let me take care of the tas...</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <a class="carousel-control-prev " href="#carouselExampleControls" role="button" data-slide="prev">
+                    <i class="fa fa fa-angle-left shadow"
+                        style="color: black; font-size: xx-large; background-color: white; border-radius: 50%; width: 60px; height: 60px; padding-top: 18px; margin-left: -50%;"></i>
+                </a>
+                <a class=" carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <i class="fa fa fa-angle-right shadow"
+                        style="color: black; font-size: xx-large; background-color: white; border-radius: 50%; width: 60px; height: 60px; padding-top: 18px; margin-right: -50%;"></i>
+                    </i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-light" style="margin-top: 100px; margin-bottom: 100px;">
+        <div class="row">
+            <div class="col-md-6">
+                <img class="img-fluid" src="./images/chef-d.jpg" alt="Card image cap">
+            </div>
+            <div class="col-md-6">
+
+                <div class="container" style="padding-top: 8%; padding-left: 10%;">
+                    <h2 style="font-weight: 700;">A go-to team at your fingertips</h2>
+                    <p>Build your team of local, background-checked Taskers to help with — and for — life. Whatever you
+                        need, they’ve got it covered.
+                    </p>
+                    <ul style="list-style: none;" style="margin-left: -100px;">
+                        <li style="margin-left: -40px; margin-bottom: 24px; font-weight: 700;">
+                            <img src="./images/check.png" style="width: 20px; height: 20px;" alt="">
+                            Compare Tasker reviews, ratings, and prices
+                        </li>
+                        <li style="margin-left: -40px; margin-bottom: 24px; font-weight: 700;">
+                            <img src="./images/check.png" style="width: 20px; height: 20px;" alt="">
+                            Choose and connect with the best person for the job
+                        </li>
+                        <li style="margin-left: -40px; font-weight: 700;">
+                            <img src="./images/check.png" style="width: 20px; height: 20px;" alt="">
+                            Save your favorites to book again and again
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="container" style="max-width: 650px;">
+                <div class="row">
+                    <div class="col-md-9 col-sm-12 col-12">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend" style="background:transparent; border-left: none;">
+                                <span class="input-group-text " id="basic-addon1" style="background:transparent; "><i
+                                        class="fa fa-map-marker" aria-hidden="true"
+                                        style="color: rgb(28, 107, 153);"></i>
+
+                                </span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Search by zip code"
+                                aria-label="Username" aria-describedby="basic-addon1"
+                                style="border-left: none; outline: none;">
+                        </div>
+
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-12">
+                        <button type="button mb-3" class="btn btn-info"
+                            style=" Max-width: 650px; padding-left: 10%; padding-right: 10%; width: 100%;">Check
+
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="container-fluid" id="location">
+                <div class="row">
+                    <div class="col-lg-3 col-md-12 col-sm-12 col-12">
+                        <img src="../../ca/en/images/earth.png" alt="" style="max-width: 180px; width: 90%; align-self: center; display: block;
+                        margin-left: auto;
+                        margin-right: auto; margin-top: 20px;">
+                    </div>
+                    <div class=" col-lg-9 col-md-12">
+                        <nav class="navbar navbar-expand-lg navbar-light  ">
+
+                            <button type="button" class="navbar-toggler" data-toggle="collapse"
+                                data-target="#navbarCollapse2" aria-expanded="false"
+                                style="width: 100%; border-top-color:rgb(28, 107, 153) ; color: rgb(28, 107, 153);
+                                 border-top-style:none; padding-top: 17px; padding-bottom: 17px; 
+                                 border-bottom-style: none;  ; border-left-style: none; border-right-style: none; outline: none; padding-left: -20%;">
+                                <span>+</span> Our Locations
+
+                            </button>
+
+                            <div class="collapse navbar-collapse" id="navbarCollapse2" style="margin-top: 25px;">
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-4 col-6">
+                                        <h6><a href="" style="text-decoration: none; color: rgb(28, 107, 153);">
+                                                Calgary</a></h6>
+                                        <h6><a href=""
+                                                style="text-decoration: none; color: rgb(28, 107, 153);">Edmonton</a>
+                                        </h6>
+                                        <h6><a href=""
+                                                style="text-decoration: none; color: rgb(28, 107, 153);">Montreal</a>
+                                        </h6>
+                                        <h6><a href="" style="text-decoration: none; color: rgb(28, 107, 153);">
+                                                Ottawa</a>
+                                        </h6>
+                                        <h6><a href="" style="text-decoration: none; color: rgb(28, 107, 153);">
+                                                Halifax</a></h6>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4 col-6" style="max-width: 160px; width: 100%;">
+                                        <ul style="list-style:none; margin-left: -20%; ">
+                                            <li style="margin-bottom: 14px;"><a href=""
+                                                    style="text-decoration: none; color: rgb(28, 107, 153);">Calgary</a>
+                                            </li style="margin-bottom: 12px;">
+                                            <li style="margin-bottom: 12px;">
+                                            </li>
+                                            <li style="margin-bottom: 12px;">
+                                            </li>
+                                            <li style="margin-bottom: 12px;">
+                                            </li>
+                                            <li style="margin-bottom: 12px;">
+                                            </li>
+
+
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-light" style="margin-top: 100px; margin-bottom: 100px;">
+        <div class="row">
+            <div class="col-lg-6 order-md-2 ">
+                <img class="img-fluid" src="./images/woman-working.jpg" alt="Card image cap">
+            </div>
+            <div class="col-lg-6 order-md-1 ">
+                <div class="container" style="max-width: 500px; padding-top: 20%; padding-bottom: 20%;">
+                    <h3 style="font-weight: 600; margin-bottom: 20px;">Get more done on the go</h3>
+                    <p>Book, manage tasks, message, and send photos to your Tasker faster than you can say "I'll do it
+                        later." Enter your mobile number and we’ll send you a link to download the TaskRabbit app.</p>
+                    <div class="row">
+                        <div class="col-md-8 col-sm-12 col-12">
+                            <div class="input-group input-group-lg mb-3">
+
+                                <input type="text" class="form-control" placeholder="Enter your Number"
+                                    aria-describedby="basic-addon1" style="outline: none; font-size: 16px;">
+                            </div>
+
+                        </div>
+                        <div class="col-md-4 col-sm-12 col-12">
+                            <button type="button" class="btn btn-info btn-lg "
+                                style=" Max-width: 650px; padding-left: 10%; padding-right: 10%; width: 100%; font-size: 16px;">Get
+                                the
+                                app
+
+                            </button>
+                        </div>
+                        <div class="row" style="padding-left: 13px; width: 100%; max-width: 340px;">
+                            <div class="col-md-6 col-sm-6 col-6">
+                                <a href="#"><img src="./images/appstore_badge.svg" alt=""
+                                        style="max-width: 150px; width: 100%; margin-top: 20px; height:40px"></a>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-6">
+                                <a href=" #"><img src="./images/google_play_badge.svg" alt=""
+                                        style="max-width: 200px; width: 100%; margin-top: 20px; height:40px">
+                                </a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="items-container">
+                <h3 style="font-weight: 600; margin-bottom: 20px;">Don't just take our word for it</h3>
+                <h6 class="text-muted" style="margin-bottom: 20px;">See how Taskers are saving the day for people like
+                    you.</h6>
+                <div class="row">
+
+                    <div class="col-md-6 col-sm-6 item item-visible">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <img src="./images/yoy.jpg" style="border-radius: 50%; width: 60px; height: 60px;"
+                                    alt="">
+                            </div>
+                            <div class="col-md-10 ">
+                                <span class="client-name" style="font-weight: 600;" itemprop="author">
+                                    Nicole C.
+                                </span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+
+                                <p style="font-size: 16px;">Keri was very responsive and professional! She helped us
+                                    pack up our messy storage room neatly and quickly. "
+                                </p>
+                                <small class="text-muted">August 30, 2019, Vancouver</small>
+                                <h6 style="color: rgb(28, 107, 153); font-weight: 600;">Moving</h6>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 item item-visible">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <img src="./images/sam.png" style="border-radius: 50%; width: 60px; height: 60px;"
+                                    alt="">
+                            </div>
+                            <div class="col-md-10 ">
+                                <span class="client-name" style="font-weight: 600;" itemprop="author">
+                                    Nicole C.
+                                </span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+
+                                <p style="font-size: 16px;">Keri was very responsive and professional! She helped us
+                                    pack up our messy storage room neatly and quickly. "
+                                </p>
+                                <small class="text-muted">August 30, 2019, Vancouver</small>
+                                <h6 style="color: rgb(28, 107, 153); font-weight: 600;">Moving</h6>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 item item-visible">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <img src="./images/kat.jpg" style="border-radius: 50%; width: 60px; height: 60px;"
+                                    alt="">
+                            </div>
+                            <div class="col-md-10 ">
+                                <span class="client-name" style="font-weight: 600;" itemprop="author">
+                                    Nicole C.
+                                </span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+
+                                <p style="font-size: 16px;">Keri was very responsive and professional! She helped us
+                                    pack up our messy storage room neatly and quickly. "
+                                </p>
+                                <small class="text-muted">August 30, 2019, Vancouver</small>
+                                <h6 style="color: rgb(28, 107, 153); font-weight: 600;">Moving</h6>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 item item-visible">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <img src="./images/kat.jpg" style="border-radius: 50%; width: 60px; height: 60px;"
+                                    alt="">
+                            </div>
+                            <div class="col-md-10 ">
+                                <span class="client-name" style="font-weight: 600;" itemprop="author">
+                                    Nicole C.
+                                </span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+
+                                <p style="font-size: 16px;">Keri was very responsive and professional! She helped us
+                                    pack up our messy storage room neatly and quickly. "
+                                </p>
+                                <small class="text-muted">August 30, 2019, Vancouver</small>
+                                <h6 style="color: rgb(28, 107, 153); font-weight: 600;">Moving</h6>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 item item-visible">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <img src="./images/sam.png" style="border-radius: 50%; width: 60px; height: 60px;"
+                                    alt="">
+                            </div>
+                            <div class="col-md-10 ">
+                                <span class="client-name" style="font-weight: 600;" itemprop="author">
+                                    Nicole C.
+                                </span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+
+                                <p style="font-size: 16px;">Keri was very responsive and professional! She helped us
+                                    pack up our messy storage room neatly and quickly. "
+                                </p>
+                                <small class="text-muted">August 30, 2019, Vancouver</small>
+                                <h6 style="color: rgb(28, 107, 153); font-weight: 600;">Moving</h6>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 item item-visible">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <img src="./images/yoy.jpg" style="border-radius: 50%; width: 60px; height: 60px;"
+                                    alt="">
+                            </div>
+                            <div class="col-md-10 ">
+                                <span class="client-name" style="font-weight: 600;" itemprop="author">
+                                    Nicole C.
+                                </span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+
+                                <p style="font-size: 16px;">Keri was very responsive and professional! She helped us
+                                    pack up our messy storage room neatly and quickly. "
+                                </p>
+                                <small class="text-muted">August 30, 2019, Vancouver</small>
+                                <h6 style="color: rgb(28, 107, 153); font-weight: 600;">Moving</h6>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 item item-visible">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <img src="./images/yoy.jpg" style="border-radius: 50%; width: 60px; height: 60px;"
+                                    alt="">
+                            </div>
+                            <div class="col-md-10 ">
+                                <span class="client-name" style="font-weight: 600;" itemprop="author">
+                                    Nicole C.
+                                </span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+
+                                <p style="font-size: 16px;">Keri was very responsive and professional! She helped us
+                                    pack up our messy storage room neatly and quickly. "
+                                </p>
+                                <small class="text-muted">August 30, 2019, Vancouver</small>
+                                <h6 style="color: rgb(28, 107, 153); font-weight: 600;">Moving</h6>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 item item-visible">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <img src="./images/kat.jpg" style="border-radius: 50%; width: 60px; height: 60px;"
+                                    alt="">
+                            </div>
+                            <div class="col-md-10 ">
+                                <span class="client-name" style="font-weight: 600;" itemprop="author">
+                                    Nicole C.
+                                </span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+
+                                <p style="font-size: 16px;">Keri was very responsive and professional! She helped us
+                                    pack up our messy storage room neatly and quickly. "
+                                </p>
+                                <small class="text-muted">August 30, 2019, Vancouver</small>
+                                <h6 style="color: rgb(28, 107, 153); font-weight: 600;">Moving</h6>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 item item-visible">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <img src="./images/yoy.jpg" style="border-radius: 50%; width: 60px; height: 60px;"
+                                    alt="">
+                            </div>
+                            <div class="col-md-10 ">
+                                <span class="client-name" style="font-weight: 600;" itemprop="author">
+                                    Nicole C.
+                                </span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+
+                                <p style="font-size: 16px;">Keri was very responsive and professional! She helped us
+                                    pack up our messy storage room neatly and quickly. "
+                                </p>
+                                <small class="text-muted">August 30, 2019, Vancouver</small>
+                                <h6 style="color: rgb(28, 107, 153); font-weight: 600;">Moving</h6>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 item item-visible">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <img src="./images/sam.png" style="border-radius: 50%; width: 60px; height: 60px;"
+                                    alt="">
+                            </div>
+                            <div class="col-md-10 ">
+                                <span class="client-name" style="font-weight: 600;" itemprop="author">
+                                    Nicole C.
+                                </span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+
+                                <p style="font-size: 16px;">Keri was very responsive and professional! She helped us
+                                    pack up our messy storage room neatly and quickly. "
+                                </p>
+                                <small class="text-muted">August 30, 2019, Vancouver</small>
+                                <h6 style="color: rgb(28, 107, 153); font-weight: 600;">Moving</h6>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 item item-visible">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <img src="./images/kat.jpg" style="border-radius: 50%; width: 60px; height: 60px;"
+                                    alt="">
+                            </div>
+                            <div class="col-md-10 ">
+                                <span class="client-name" style="font-weight: 600;" itemprop="author">
+                                    Nicole C.
+                                </span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+
+                                <p style="font-size: 16px;">Keri was very responsive and professional! She helped us
+                                    pack up our messy storage room neatly and quickly. "
+                                </p>
+                                <small class="text-muted">August 30, 2019, Vancouver</small>
+                                <h6 style="color: rgb(28, 107, 153); font-weight: 600;">Moving</h6>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 item item-visible">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <img src="./images/lol.jpg" style="border-radius: 50%; width: 60px; height: 60px;"
+                                    alt="">
+                            </div>
+                            <div class="col-md-10 ">
+                                <span class="client-name" style="font-weight: 600;" itemprop="author">
+                                    Nicole C.
+                                </span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+
+                                <p style="font-size: 16px;">Keri was very responsive and professional! She helped us
+                                    pack up our messy storage room neatly and quickly. "
+                                </p>
+                                <small class="text-muted">August 30, 2019, Vancouver</small>
+                                <h6 style="color: rgb(28, 107, 153); font-weight: 600;">Moving</h6>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 item item-visible">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <img src="./images/sam.png" style="border-radius: 50%; width: 60px; height: 60px;"
+                                    alt="">
+                            </div>
+                            <div class="col-md-10 ">
+                                <span class="client-name" style="font-weight: 600;" itemprop="author">
+                                    Nicole C.
+                                </span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+
+                                <p style="font-size: 16px;">Keri was very responsive and professional! She helped us
+                                    pack up our messy storage room neatly and quickly. "
+                                </p>
+                                <small class="text-muted">August 30, 2019, Vancouver</small>
+                                <h6 style="color: rgb(28, 107, 153); font-weight: 600;">Moving</h6>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 item item-visible">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <img src="./images/yoy.jpg" style="border-radius: 50%; width: 60px; height: 60px;"
+                                    alt="">
+                            </div>
+                            <div class="col-md-10 ">
+                                <span class="client-name" style="font-weight: 600;" itemprop="author">
+                                    Nicole C.
+                                </span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+
+                                <p style="font-size: 16px;">Keri was very responsive and professional! She helped us
+                                    pack up our messy storage room neatly and quickly. "
+                                </p>
+                                <small class="text-muted">August 30, 2019, Vancouver</small>
+                                <h6 style="color: rgb(28, 107, 153); font-weight: 600;">Moving</h6>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 item item-visible">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <img src="./images/lol.jpg" style="border-radius: 50%; width: 60px; height: 60px;"
+                                    alt="">
+                            </div>
+                            <div class="col-md-10 ">
+                                <span class="client-name" style="font-weight: 600;" itemprop="author">
+                                    Nicole C.
+                                </span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+
+                                <p style="font-size: 16px;">Keri was very responsive and professional! She helped us
+                                    pack up our messy storage room neatly and quickly. "
+                                </p>
+                                <small class="text-muted">August 30, 2019, Vancouver</small>
+                                <h6 style="color: rgb(28, 107, 153); font-weight: 600;">Moving</h6>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 item item-visible">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <img src="./images/kat.jpg" style="border-radius: 50%; width: 60px; height: 60px;"
+                                    alt="">
+                            </div>
+                            <div class="col-md-10 ">
+                                <span class="client-name" style="font-weight: 600;" itemprop="author">
+                                    Nicole C.
+                                </span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+
+                                <p style="font-size: 16px;">Keri was very responsive and professional! She helped us
+                                    pack up our messy storage room neatly and quickly. "
+                                </p>
+                                <small class="text-muted">August 30, 2019, Vancouver</small>
+                                <h6 style="color: rgb(28, 107, 153); font-weight: 600;">Moving</h6>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 item item-visible">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <img src="./images/sam.png" style="border-radius: 50%; width: 60px; height: 60px;"
+                                    alt="">
+                            </div>
+                            <div class="col-md-10 ">
+                                <span class="client-name" style="font-weight: 600;" itemprop="author">
+                                    Nicole C.
+                                </span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+
+                                <p style="font-size: 16px;">Keri was very responsive and professional! She helped us
+                                    pack up our messy storage room neatly and quickly. "
+                                </p>
+                                <small class="text-muted">August 30, 2019, Vancouver</small>
+                                <h6 style="color: rgb(28, 107, 153); font-weight: 600;">Moving</h6>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 item item-visible">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <img src="./images/person.png" style="border-radius: 50%; width: 60px; height: 60px;"
+                                    alt="">
+                            </div>
+                            <div class="col-md-10 ">
+                                <span class="client-name" style="font-weight: 600;" itemprop="author">
+                                    Nicole C.
+                                </span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+
+                                <p style="font-size: 16px;">Keri was very responsive and professional! She helped us
+                                    pack up our messy storage room neatly and quickly. "
+                                </p>
+                                <small class="text-muted">August 30, 2019, Vancouver</small>
+                                <h6 style="color: rgb(28, 107, 153); font-weight: 600;">Moving</h6>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <ul class="pagination-container"></ul>
+        </div>
+    </div>
+    <div class="container-fluid bg-light text-center" style="padding-top: 4%; padding-bottom: 4%;">
+        <h3 style="font-weight: 600;">Ready to get started?</h3>
+        <div class="container" style="padding-top: 3%; padding-bottom: 3%;">
+            <div class="row">
+                <div class="col-md-6" id="border" style="padding-bottom: 20px;">
+                    <img src="./images/client-sign-up-img.png" class="img-fluid" alt="">
+                    <p
+                        style="max-width: 280px; width: 100%; margin-left: auto; margin-right: auto; font-size: 18px; margin-top: 20px;">
+                        Hear that? The
+                        sweet sigh of relief.
+                        Start getting more done.
+                    </p>
+                    <a href="" class="btn btn-info btn-lg" style="max-width: 200px; width: 90%; margin-top: 15px;">Sign
+                        up
+                    </a>
+                </div>
+                <div class="col-md-6" style="padding-bottom: 20px;">
+                    <img src="./images/become-a-tasker-img.png" class="img-fluid" alt="">
+                    <p
+                        style="max-width: 280px; width: 100%; margin-left: auto; margin-right: auto; font-size: 18px; margin-top: 20px;">
+                        Grow your own business while saving the day for busy neighbors.
+                    </p>
+                    <a href="" class="btn btn-info btn-lg"
+                        style="max-width: 200px; width: 90%; margin-top: 15px;">Become a Tasker
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container-fluid" style="padding-top: 4%; padding-bottom: 4%;">
+        <div class="container">
+
+            <div class="container-fluid " style="margin-left: -22px;">
+                <h3 style="font-weight: 700; margin-bottom: 10px;">Get help today</h3>
+                <a href="./services/contactless/index.html" class="btn btn-outline-info btn-lg bob"
+                    style="margin-right: 12px; margin-top: 12px; font-size: 18px;">Handyman
+                    service</a>
+                <a href="./services/contactless/index.html" class="btn btn-outline-info btn-lg bob"
+                    style="margin-right: 12px; margin-top: 12px; font-size: 18px;">Help
+                    Moving</a>
+                <a href="./services/contactless/index.html" class="btn btn-outline-info btn-lg bob"
+                    style="margin-right: 12px; margin-top: 12px; font-size: 18px;">Hire a
+                    Personal Assistant
+                </a>
+                <a href="./services/contactless/index.html" class="btn btn-outline-info btn-lg bob"
+                    style="margin-right: 12px; margin-top: 12px; font-size: 18px;">Hire a
+                    Painter
+                </a>
+                <a href="./services/contactless/index.html" class="btn btn-outline-info btn-lg bob"
+                    style="margin-right: 12px; margin-top: 12px; font-size: 18px;">Delivery
+                    Services
+                </a>
+                <a href="./services/contactless/index.html" class="btn btn-outline-info btn-lg bob"
+                    style="margin-right: 12px; margin-top: 12px; font-size: 18px;">Laundry
+                    Services
+                </a>
+                <a href="./services/contactless/index.html" class="btn btn-outline-info btn-lg bob"
+                    style="margin-right: 12px; margin-top: 12px; font-size: 18px;">IKEA
+                    Furniture Assembly
+                </a>
+                <a href="" class="btn btn-outline-info btn-lg bob"
+                    style="margin-right: 12px; margin-top: 12px; font-size: 18px;">TV
+                    Mounting
+                </a>
+                <a href="./services/contactless/index.html" class="btn btn-outline-info btn-lg bob"
+                    style="margin-right: 12px; margin-top: 12px; font-size: 18px;">Hanging
+                    Pictures Help
+                </a>
+                <a href="./services/contactless/index.html" class="btn btn-outline-info btn-lg bob"
+                    style="margin-right: 12px; margin-top: 12px; font-size: 18px;">
+                    Furniture Delivery
+
+                </a>
+                <a href="./services/contactless/index.html" class="btn btn-outline-info btn-lg bob"
+                    style="margin-right: 12px; margin-top: 12px; font-size: 18px;">Light
+                    Installation
+                </a>
+
+
+            </div>
+        </div>
+    </div>
+    <div id="mybutton" id="bottom" style="max-width: 380px;">
+        <button class="help shadow"> ? Help</button>
+        <div class="container-fluid shadow rounded" id="helpbody"
+            style="background-color: white; display: none; width: 320px;">
+            <div class="rounded"
+                style="display: flex; background-color: rgb(28, 107, 153); padding-top: 8px; padding-bottom: 6px; margin-left: -14px; margin-right: -14px; ">
+                <h5 style="color: white; text-align: center; margin-left: 45%;">Help</h5>
+                <button id="closehelp"
+                    style="background-color: transparent; border: none; outline: none; color: white; margin-left: 29%;">
+                    <i class="fas fa-minus"></i></button>
+            </div>
+            <div class="container-fluid" style="background-color: white; padding-top: 25px; padding-bottom: 55px; ">
+                <a>
+                    <div class="container shadow rounded"
+                        style="padding-top: 25px; padding-bottom: 25px; padding-left: 20px; margin-bottom: 18px; ">
+                        <i class="fas fa-phone" style="color: rgb(28, 107, 153);"></i> <span style="margin-left: 20px;">
+                            Call us</span>
+                    </div>
+                </a>
+                <a>
+                    <div class="container shadow rounded"
+                        style="padding-top: 25px; padding-bottom: 25px; padding-left: 20px; margin-bottom: 18px; ">
+                        <i class="fas fa-phone" style="color: rgb(28, 107, 153);"></i> <span style="margin-left: 20px;">
+                            Call us</span>
+                    </div>
+                </a>
+                <a>
+                    <div class="container shadow rounded"
+                        style="padding-top: 25px; padding-bottom: 25px; padding-left: 20px; margin-bottom: 18px; ">
+                        <i class="fas fa-phone" style="color: rgb(28, 107, 153);"></i> <span style="margin-left: 20px;">
+                            Call us</span>
+                    </div>
+                </a>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small indigo"
+        style="background-color:rgba(60, 84, 112, 0.726)  ; padding-top: 25px; padding-bottom: 25px;">
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left ">
+            <h5 style="color: rgb(221, 221, 221); font-weight: 300;">Follow us! We're friendly: </h5>
+            <a href="" style="color: rgba(60, 84, 112, 0.726);"> <i class="fab fa-facebook-f"
+                    style="background-color: white; color: rgba(60, 84, 112, 0.726); padding: 7px 10px; border-radius: 2px;"></i></a>
+            <a href="" style="color: rgba(60, 84, 112, 0.726);"> | <i class="fab fa-twitter"
+                    style=" color: white; padding: 7px 10px; border-radius: 2px; font-size: 24px;"></i></a>
+            <a href="" style="color: rgba(60, 84, 112, 0.726);"> | <i class="fab fa-instagram"
+                    style="background-color: transparent; color:white; padding: 7px 10px; border-radius: 2px; font-size: 24px;"></i></a>
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-4 mx-auto">
+
+                    <!-- Links -->
+                    <h5 class=" mt-3 mb-2" style="color: rgb(221, 221, 221); font-weight: 300;">Company
+                    </h5>
+
+                    <ul class="list-unstyled" style="font-size: 20px;">
+                        <li>
+                            <a href="#!"
+                                style="text-decoration: none; color: white; margin-bottom: 20px; font-weight: 400;">Become
+                                a
+                                Tasker</a>
+                        </li>
+                        <li>
+                            <a href="#!"
+                                style="text-decoration: none; color: white; margin-bottom: 20px; font-weight: 400;">All
+                                Services</a>
+                        </li>
+                        <li>
+                            <a href="#!"
+                                style="text-decoration: none; color: white; margin-bottom: 20px; font-weight: 400;">Service
+                                By City</a>
+                        </li>
+                        <li>
+                            <a href="#!"
+                                style="text-decoration: none; color: white; margin-bottom: 20px; font-weight: 400;">Buy
+                                a Gift Card</a>
+                        </li>
+                        <li>
+                            <a href="#!"
+                                style="text-decoration: none; color: white; margin-bottom: 20px; font-weight: 400;">Elite
+                                Taskers</a>
+                        </li>
+                        <li>
+                            <a href="#!"
+                                style="text-decoration: none; color: white; margin-bottom: 20px; font-weight: 400;">Help</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-4 mx-auto">
+
+                    <!-- Links -->
+                    <h5 class=" mt-3 mb-2" style="color: rgb(221, 221, 221); font-weight: 300;">Discover
+                    </h5>
+
+                    <ul class="list-unstyled" style="font-size: 20px;">
+                        <li>
+                            <a href="#!"
+                                style="text-decoration: none; color: white; margin-bottom: 20px; font-weight: 400;">Careers</a>
+                        </li>
+                        <li>
+                            <a href="#!"
+                                style="text-decoration: none; color: white; margin-bottom: 20px; font-weight: 400;">Press</a>
+                        </li>
+                        <li>
+                            <a href="#!"
+                                style="text-decoration: none; color: white; margin-bottom: 20px; font-weight: 400;">TaskRabbit
+                                for Good</a>
+                        </li>
+                        <li>
+                            <a href="#!"
+                                style="text-decoration: none; color: white; margin-bottom: 20px; font-weight: 400;">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#!"
+                                style="text-decoration: none; color: white; margin-bottom: 20px; font-weight: 400;">Terms
+                                & Privacy</a>
+                        </li>
+                        <li>
+                            <a href="#!"
+                                style="text-decoration: none; color: white; margin-bottom: 20px; font-weight: 400;">About
+                                Our Ads</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-4 mx-auto">
+
+                    <!-- Links -->
+                    <h5 class=" mt-3" style="color: rgb(221, 221, 221); font-weight: 300;">Download
+                        our app
+                    </h5>
+                    <h5 class="" style="color: white; font-weight: 300;">
+                        Tackle your to-do list wherever you are with our mobile app.
+                    </h5>
+
+
+                    <div class="row" style="width: 100%; max-width: 340px; ">
+                        <div class="col-md-6 col-sm-6 col-6">
+                            <a href="#"><img src="../images/appstore_badge.svg" alt=""
+                                    style="max-width: 150px; width: 100%; margin-top: 20px; height:40px"></a>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-6">
+                            <a href=" #"><img src="../images/google_play_badge.svg" alt=""
+                                    style="max-width: 200px; width: 100%; margin-top: 20px; height:40px">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Grid column -->
+
+
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+
+
+    </footer>
+    <!-- Footer -->
+    <script>
+        $(".help").click(function () {
+            $("#helpbody").show(0.3);
+            $(".help").hide(0.3);
+        });
+
+        $("#closehelp").click(function () {
+            $("#helpbody").hide(0.3);
+            $(".help").show(0.3);
+
+
+        });
+        (function ($) {
+
+            // Initiate the paginator on the .items-container element.
+            var paginator = new $('.items-container').joldPaginator({
+                'perPage': 6,
+                'items': '.item',
+                'paginator': '.pagination-container',
+                'indicator': {
+                    'selector': '.pagination-indicator',
+                    'text': 'Showing item {start}-{end} of {total}',
+                }
+            });
+
+
+            // Toggle items
+            $('body').on('change', '.js-toggle-items', function (e) {
+
+                e.preventDefault();
+
+                var checked = this.checked;
+
+                $('.items-container').find('.item')
+                    .removeClass('item-hidden')
+                    .addClass('item-visible');
+
+                // Include historical reports (invalid)
+                if (checked == true) {
+                    $('.items-container').find('.item-toggleable')
+                        .removeClass('item-hidden')
+                        .addClass('item-visible');
+                }
+
+                // Exclude historical reports (invalid)
+                if (checked == false) {
+                    $('.items-container').find('.item-toggleable')
+                        .removeClass('item-visible')
+                        .addClass('item-hidden');
+                }
+
+                // Reset the paginator
+                paginator.init();
+
+            });
+
+        })(jQuery);
+    </script>
+</body>
+
+</html>
